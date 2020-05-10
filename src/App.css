@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
 }
 
 .App-logo {
@@ -36,3 +41,12 @@
     transform: rotate(360deg);
   }
 }
+/* 
+#892d4a bordo
+#c8bf63 green
+#5ec2c7 azzuro
+#d0dbdd gray 
+#9aafc4 blue/gray 
+
+#296051 green
+#aec3c4 green chiara */
