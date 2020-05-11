@@ -41,6 +41,18 @@
     transform: rotate(360deg);
   }
 }
+
+.makeStyles-root-1 {
+  width: 40%;
+  margin: auto;
+}
+
+.Parameter-selection {
+  width: 50%;
+  text-align: center;
+  margin: 50px auto;
+}
+
 /* 
 #892d4a bordo
 #c8bf63 green

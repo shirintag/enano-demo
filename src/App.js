@@ -1,15 +1,10 @@
 import React from "react";
-import DropComponent from "./DropComponent";
-import ParamertersComponent from "./ParametersPage";
+import CompressionPage from "./components/CompressionPage";
+
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <DropComponent />
-      <ParamertersComponent />
-    </div>
-  );
-}
+const App = () => {
+  return <CompressionPage />;
+};
 
 export default App;

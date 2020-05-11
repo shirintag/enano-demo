@@ -13,7 +13,7 @@ function valuetext(value) {
   return `${value}°C`;
 }
 
-function DiscreteSlider() {
+function DiscreteSlider(props) {
   const classes = useStyles();
 
   return (

@@ -1,0 +1,27 @@
+.dropzone {
+  width: 50%;
+  text-align: center;
+  padding: 50px;
+  min-height: 60px;
+  cursor: pointer;
+  margin: 0 auto;
+  color: #195122;
+  border: 2px dashed #041f10;
+  border-radius: 5px;
+  background-color: #99cd8240 !important;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px auto;
+  color: #4f9928;
+  width: 50%;
+}
+.uploadIcon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-image: url("../images/upload.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
