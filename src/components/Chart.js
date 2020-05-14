@@ -35,7 +35,6 @@ const ChartComponent = (props) => {
   const [selectedModelData, setSelectedModelData] = useState(
     data.enano.models[0]
   );
-  const [buttonFlag, activateButton] = useState(false);
 
   return (
     <Fragment>
@@ -55,7 +54,6 @@ const ChartComponent = (props) => {
           data={newData}
           onValueClick={(datapoint) => {
             setSelectedModelData(datapoint);
-            activateButton(true);
           }}
           onValueMouseOver={(datapoint) => {
             setSelectedModelData(datapoint);
@@ -107,7 +105,7 @@ const ChartComponent = (props) => {
       </div>
 
       <a target="_blank" rel="noopener noreferrer" download>
-        <Button disabled={!buttonFlag}>
+        <Button>
           <i className="fas fa-download" />
           Download Model
         </Button>
