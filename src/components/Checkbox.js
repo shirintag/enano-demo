@@ -4,9 +4,9 @@ import FormLabel from "@material-ui/core/FormLabel";
 import FormControl from "@material-ui/core/FormControl";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormHelperText from "@material-ui/core/FormHelperText";
-import Checkbox from "@material-ui/core/Checkbox";
+import Checkbox from "@material-ui/core/CheckBox";
 
+import "./CheckBox";
 const useStyles = makeStyles((theme) => ({
   root: {},
   checkBox: {
@@ -23,8 +23,8 @@ const useStyles = makeStyles((theme) => ({
 export default function CheckboxesGroup() {
   const classes = useStyles();
   const [state, setState] = React.useState({
-    speed: true,
-    size: false,
+    speed: false,
+    size: true,
   });
 
   const handleChange = (event) => {
@@ -32,12 +32,12 @@ export default function CheckboxesGroup() {
   };
 
   const { size, speed } = state;
-  const error = [size, speed].filter((v) => v).length !== 2;
+  // const error = [size, speed].filter((v) => v).length !== 2;
 
   return (
     <div className={classes.root}>
       <FormControl component="fieldset" className={classes.formControl}>
-        <FormLabel component="legend">Pick one of the parameters</FormLabel>
+        <FormLabel component="legend">Optimize for</FormLabel>
         <FormGroup>
           <FormControlLabel
             control={
@@ -57,16 +57,16 @@ export default function CheckboxesGroup() {
             label="Speed"
           />
         </FormGroup>
-        <FormHelperText>Be careful</FormHelperText>
+        {/* <FormHelperText>Be careful</FormHelperText> */}
       </FormControl>
-      <FormControl
+      {/* {      <FormControl
         required
         error={error}
         component="fieldset"
         className={classes.formControl}
-      >
+      >} 
         <FormHelperText>You can display an error</FormHelperText>
-      </FormControl>
+      </FormControl>*/}
     </div>
   );
 }

@@ -1,4 +1,12 @@
 .MuiButton-root {
-  background-color: #17b8be !important;
-  border: none;
+  width: 240px;
+  height: 38px;
+  border: 1px solid #17b8be !important;
+  margin: 20px !important;
+}
+
+.MuiButton-root:hover {
+  background: linear-gradient(90deg, #14a9af, #17b8be);
+  box-shadow: 0.2em 0.2em 0.5em rgba(23, 184, 190, 0.7);
+  /* background-color: #04cad2 !important; */
 }
