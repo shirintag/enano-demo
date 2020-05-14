@@ -20,9 +20,10 @@ import {
 import shadows from "@material-ui/core/styles/shadows";
 import { ThemeProvider } from "@material-ui/core";
 
-let newData = data.enano.models.map((el) => {
+let newData = data.enano.models.map((el, id) => {
   let sizeInMb = bytesToSize(el.cabac);
   el = {
+    id,
     x: el.cr,
     y: el.top5,
     size: sizeInMb,
@@ -36,6 +37,8 @@ const ChartComponent = (props) => {
     data.enano.models[0]
   );
 
+  const [selectedPointId, setSelectedPointId] = useState(newData[0].id);
+
   return (
     <Fragment>
       <h1>MODEL ANALYSIS</h1>
@@ -46,7 +49,7 @@ const ChartComponent = (props) => {
         <XAxis />
         <YAxis />
         <MarkSeries
-          color="#17b8be"
+          colorType="literal"
           className="mark-series-example"
           strokeWidth={2}
           opacity="0.8"
@@ -57,6 +60,10 @@ const ChartComponent = (props) => {
           }}
           onValueMouseOver={(datapoint) => {
             setSelectedModelData(datapoint);
+            setSelectedPointId(datapoint.id);
+          }}
+          getColor={({ id }) => {
+            return selectedPointId === id ? "#FF9833" : "#12939A";
           }}
         />
         <ChartLabel
