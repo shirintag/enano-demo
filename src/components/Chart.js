@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { bytesToSize, calcolateCompression } from "../utility";
 import data from "../data.json";
-
+import { download } from "../utility";
 import ModelDataComponent from "./ModelDataComponent";
 import Button from "@material-ui/core/Button";
 
@@ -104,7 +104,12 @@ const ChartComponent = (props) => {
         </h1>
       </div>
 
-      <a target="_blank" rel="noopener noreferrer" download>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        download
+        onClick={() => download("model.enano", "ugzt")}
+      >
         <Button>
           <i className="fas fa-download" />
           Download Model
