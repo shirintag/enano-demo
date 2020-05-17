@@ -8,7 +8,7 @@
   color: #38b8be;
   border: 2px dashed #041f10;
   border-radius: 5px;
-  background-color: #ebebeb !important;
+  background-color: #12939a0f !important;
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
   width: 50px;
   height: 50px;
   margin: 0 auto;
-  background-image: url("../images/upload.jpg");
+  background-image: url("../images/upload.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }

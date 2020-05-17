@@ -9,6 +9,7 @@ body,
   padding: 0;
   vertical-align: middle;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f526;
 }
 
 #root {
@@ -112,13 +113,22 @@ body,
   background: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   text-align: right;
-  line-height: 20px;
+  line-height: 25px;
 }
 .data-title {
   border: none;
 }
 .enano {
-  border: 1px solid #38b8be;
+  font-size: 14px;
+  border: 1px solid #12939a;
+}
+
+.enano:hover {
+  width: 170px;
+  height: 120px;
+  line-height: 30px;
+  font-size: 16px;
+  box-shadow: 0 0 0.5em rgba(18, 147, 154, 0.5);
 }
 
 .rv-xy-plot__axis__title text {
@@ -155,7 +165,6 @@ legend {
 
 .MuiFormControl-root.makeStyles-formControl-86 {
   margin-bottom: 40px;
-  margin-left: 10px;
 }
 
 .MuiFormControlLabel-root {
