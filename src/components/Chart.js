@@ -1,12 +1,11 @@
 import React, { Fragment, useState } from "react";
-import { bytesToSize, calcolateCompression } from "../utility";
+import { bytesToSize, calcolateCompression, download } from "../utils";
 import data from "../data.json";
-import { download } from "../utility";
 import ModelDataComponent from "./ModelDataComponent";
 import Button from "@material-ui/core/Button";
 
+import "./Chart.css";
 import "react-vis/dist/style.css";
-import "./Chart";
 
 import {
   XYPlot,
@@ -17,8 +16,6 @@ import {
   MarkSeries,
   ChartLabel,
 } from "react-vis";
-import shadows from "@material-ui/core/styles/shadows";
-import { ThemeProvider } from "@material-ui/core";
 
 let newData = data.enano.models.map((el, id) => {
   let sizeInMb = bytesToSize(el.cabac);

@@ -5,7 +5,7 @@
   min-height: 60px;
   cursor: pointer;
   margin: 0 auto;
-  color: #38b8be;
+  color: var(--primary-color);
   border: 2px dashed #041f10;
   border-radius: 5px;
   background-color: #12939a0f !important;
@@ -13,7 +13,7 @@
 
 h1 {
   text-align: center;
-  color: #12939a;
+  color: var(--primary-color);
 }
 .uploadIcon {
   width: 50px;

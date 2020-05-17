@@ -10,7 +10,8 @@ function UploadModel(props) {
 
   return (
     <Fragment>
-      <h1>Upload ONNX model</h1>
+      <h1>eNano Compression of neural networks</h1>
+      <h3>Upload ONNX model</h3>
       <div className="dropzone" {...getRootProps()}>
         <input {...getInputProps()} />
         {isDragActive ? (

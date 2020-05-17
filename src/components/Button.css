@@ -1,12 +1,20 @@
 .MuiButton-root {
   width: 240px;
   height: 38px;
-  border: 1.5px solid #17b8be !important;
   margin: 20px !important;
+  border: 1.5px solid var(--primary-color) !important;
+  /* border: 1.5px solid hsl(30, 100%, 60%) !important; */
+}
+
+.MuiButton-text {
+  font-weight: 550;
 }
 
 .MuiButton-root:hover {
-  background: linear-gradient(90deg, #14a9af, #17b8be);
-  box-shadow: 0.2em 0.2em 0.5em rgba(23, 184, 190, 0.7);
-  /* background-color: #04cad2 !important; */
+  color: whitesmoke;
+  font-weight: 700;
+  border: 1.5px solid transparent !important;
+  background-color: var(--primary-color) !important;
+  box-shadow: 0 0 0.5em var(--primary-color);
+  /* background: linear-gradient(90deg, #ff9833, #ff9833); */
 }

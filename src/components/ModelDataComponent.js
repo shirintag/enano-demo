@@ -1,5 +1,5 @@
 import React from "react";
-import { bytesToSize } from "../utility";
+import { bytesToSize } from "../utils";
 
 const ModelDataComponent = (props) => {
   return (

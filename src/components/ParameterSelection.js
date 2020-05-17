@@ -2,7 +2,7 @@ import React from "react";
 import Checkbox from "./CheckBox";
 import Button from "@material-ui/core/Button";
 import RadioButtonsGroup from "./RadioButtonsGroup";
-import "./ParameterSelection";
+import "./ParameterSelection.css";
 
 function ParameterSelection(props) {
   return (
