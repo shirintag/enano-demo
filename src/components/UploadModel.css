@@ -1,4 +1,4 @@
-.dropzone {
+.Dropzone-container {
   width: 50%;
   text-align: center;
   padding: 50px;
@@ -23,4 +23,3 @@ h1 {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
-/* #d2dde440 */

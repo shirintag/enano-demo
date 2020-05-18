@@ -3,7 +3,7 @@ import { bytesToSize } from "../utils";
 
 const ModelDataComponent = (props) => {
   return (
-    <ul className="data-info enano">
+    <ul className="data-info data-info-enano">
       <b>eNano compression</b>
       <li>{bytesToSize(props.cabac).toFixed(2)} MB</li>
       <li>{props.top1.toFixed(2)} %</li>

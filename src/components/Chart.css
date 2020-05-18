@@ -1,47 +1,43 @@
 .data-info-container {
-  margin-top: 20px;
+  height: 132px;
+  margin: 20px 0;
   display: flex;
   flex-direction: row;
 }
-
 .data-info {
-  /* visibility: hidden; */
-  width: auto;
-  height: auto;
   float: left;
-  border: 1px solid #e2e2e2;
   padding: 6px 15px;
   margin: 5px;
   font-size: 12px;
+  text-align: right;
+  line-height: 25px;
   list-style: none;
   background: white;
   background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #e2e2e2;
   border-radius: 5px;
-  text-align: right;
-  line-height: 25px;
 }
-.data-title {
+
+.data-info-attributes {
+  padding: 6px 0;
   border: none;
 }
-.enano {
+
+.data-info-enano {
   font-size: 14px;
   border: 1px solid var(--primary-color);
 }
-
-.enano:hover {
+.data-info-enano:hover {
   line-height: 27px;
   font-size: 16px;
   box-shadow: 0 0 0.5em rgba(18, 147, 154, 0.5);
 }
-
 .rv-xy-plot__axis__title text {
   font-size: 11px;
 }
-
 .compressionTime {
   margin: 67px 0 0 5px;
 }
-
 legend {
   font-weight: bold !important;
   color: var(--primary-color) !important;

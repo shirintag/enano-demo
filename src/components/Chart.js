@@ -83,7 +83,7 @@ const ChartComponent = (props) => {
         />
       </XYPlot>
       <div className="data-info-container">
-        <ul className="data-info data-title">
+        <ul className="data-info data-info-attributes">
           <br />
           <li>
             <b>Size:</b>
