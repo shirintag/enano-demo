@@ -96,7 +96,7 @@ const ChartComponent = (props) => {
           </li>
         </ul>
         <ul className="data-info">
-          <b>LZF compression</b>
+          <b>Original</b>
           <li>{bytesToSize(data.original.hdf_size).toFixed(2)} MB</li>
           <li>{data.original.top1.toFixed(2)} %</li>
           <li>{data.original.top5.toFixed(2)} %</li>

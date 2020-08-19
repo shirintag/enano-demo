@@ -31,7 +31,6 @@ export default function CheckboxesGroup() {
   };
 
   const { size, speed } = state;
-  // const error = [size, speed].filter((v) => v).length !== 2;
 
   return (
     <div className={classes.root}>
@@ -56,16 +55,7 @@ export default function CheckboxesGroup() {
             label="Speed"
           />
         </FormGroup>
-        {/* <FormHelperText>Be careful</FormHelperText> */}
       </FormControl>
-      {/* {      <FormControl
-        required
-        error={error}
-        component="fieldset"
-        className={classes.formControl}
-      >} 
-        <FormHelperText>You can display an error</FormHelperText>
-      </FormControl>*/}
     </div>
   );
 }

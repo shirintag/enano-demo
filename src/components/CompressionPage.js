@@ -9,10 +9,6 @@ export class CompressionPage extends Component {
     super(props);
     this.state = {
       step: 1,
-      // file: false,
-      // seed: false,
-      // size: false,
-      // performance: 5,
     };
   }
 
